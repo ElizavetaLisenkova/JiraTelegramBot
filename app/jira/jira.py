@@ -1,21 +1,13 @@
-import telebot
-from telebot import types
-import requests
-import secret
-telegram_token = secret.telegram_token
-bot = telebot.TeleBot(telegram_token)
-bot.remove_webhook()
-
-
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+import secret
 
 url = secret.testUrl
 email = secret.email
 testToken = secret.testToken
 
-auth = HTTPBasicAuth( email, testToken)
+auth = HTTPBasicAuth(email, testToken)
 
 headers = {
   "Accept": "application/json"
