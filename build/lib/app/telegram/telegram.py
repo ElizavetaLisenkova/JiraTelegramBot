@@ -1,8 +1,8 @@
 import telebot
 from telebot import types
-from app.jira.jira import get_request
-from app.secret import telegram_token
-
+# from .. import secret
+from .. import jira
+telegram_token = '6133746261:AAHpNiQ6uFQZlDJlWNsHmVKkL_US8tMYsfY'
 
 api_token = telegram_token
 bot = telebot.TeleBot(api_token)
